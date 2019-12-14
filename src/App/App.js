@@ -46,7 +46,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { authed, selectedBoardId } = this.state;
+    const { authed } = this.state;
 
     return (
       <div className="App">
