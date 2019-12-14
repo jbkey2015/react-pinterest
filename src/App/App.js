@@ -2,10 +2,10 @@ import React from 'react';
 import firebase from 'firebase/app';
 import firebaseConnection from '../helpers/data/connection';
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Auth from '../components/Auth/Auth';
+import MyNavbar from '../components/MyNavbar/MyNavbar';
 
-firebaseConnection.firebaseApp();
+firebaseConnection();
 
 class App extends React.Component {
   state = {
@@ -31,9 +31,10 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <MyNavbar authed={authed}/>
         <button className='btn btn-danger'>HELP ME</button>
       {
-        (authed) ? (<div>You loggine in</div>) : (<Auth />)
+        (authed) ? (<div>You're Logged In</div>) : (<Auth />)
       }
       </div>
     );
