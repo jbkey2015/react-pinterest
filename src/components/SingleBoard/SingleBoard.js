@@ -5,7 +5,7 @@ import boardData from '../../helpers/data/boardData';
 import pinData from '../../helpers/data/pinData';
 
 import Pin from '../Pins/Pins';
-import PinForm from '../../PinForm/PinForm';
+import PinForm from '../PinForm/PinForm';
 
 class SingleBoard extends React.Component {
   static propTypes = {
