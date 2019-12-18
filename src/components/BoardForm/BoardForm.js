@@ -54,17 +54,17 @@ class BoardForm extends React.Component {
         </div>
         <div className="form-group">
           <label htmlFor="description-name">Board Description:</label>
-    <input
-      type="text"
-      className="form-control"
-      id="board-description"
-      placeholder="Enter board description"
-      value={this.state.boardDescription}
-      onChange={this.descriptionChange}
-    />
-  </div>
-  <button className="btn btn-secondary" onClick={this.saveBoardEvent}>Save Board</button>
-</form>
+          <input
+          type="text"
+          className="form-control"
+          id="board-description"
+          placeholder="Enter board description"
+          value={this.state.boardDescription}
+          onChange={this.descriptionChange}
+          />
+        </div>
+        <button className="btn btn-secondary" onClick={this.saveBoardEvent}>Save Board</button>
+      </form>
     );
   }
 }
