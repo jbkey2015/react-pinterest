@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import authData from '../helpers/data/authData';
+import authData from '../../helpers/data/authData';
 
 
 class PinForm extends React.Component {
